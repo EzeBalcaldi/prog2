@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+
+
+public class Continente extends ElementoGeografico{
+protected ArrayList<ElementoGeografico> ciudades;
+public Continente(String n){
+	nombre = n;
+	ciudades = new ArrayList<ElementoGeografico>();
+}
+	public int cantidadHabitantes(){
+		int suma = 0;
+		for(ElementoGeografico i: ciudades){
+			suma = suma + i.cantidadHabitantes();
+			}
+		return suma;
+	}
+	public void add(ElementoGeografico e){
+		ciudades.add(e);
+	}
+	public int gastosTotales(){
+		int suma = 0;
+		for(ElementoGeografico i: ciudades){
+			suma = suma + i.gastosTotales();
+			}
+		return suma;
+	}
+}

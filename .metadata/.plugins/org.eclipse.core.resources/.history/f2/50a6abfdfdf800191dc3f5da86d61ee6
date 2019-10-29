@@ -1,0 +1,18 @@
+package tp5ej2;
+
+import java.util.ArrayList;
+
+public class Mesa extends SistemaElectoral{
+protected ArrayList<Votante> votantes;
+protected ArrayList<Voto> votos;
+@Override
+public int cantidadVotos() {
+	// TODO Auto-generated method stub
+	return 0;
+}
+@Override
+public int cantidadVotos(Candidato c) {
+	// TODO Auto-generated method stub
+	return 0;
+}
+}

@@ -1,0 +1,57 @@
+package tp5ej2;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+
+public class Buzon {
+protected HashSet<Carta> cartas;
+private ArrayList<Niño> buenos;
+
+public Buzon(){
+	cartas = new HashSet<Carta>();
+	buenos = new ArrayList <Niño>();
+}
+
+private void add(Carta r){
+	cartas.add(r);
+}
+private void add(Niño r){
+	buenos.add(r);
+}
+public int cartasRecibidas(CondicionNavidad c){
+	int suma = 0;
+	for(Carta i: cartas){
+		if(c.seCumple(i)){
+			suma++;
+		}
+	}
+	return suma;
+}
+public void agregarCarta(Carta c){
+	boolean esta = false;
+	for(Niño n: buenos){
+		if(c.remitente.equals(n)){
+			esta = true;
+			
+		}
+		if(esta){
+			add(c);
+		}
+		else{
+			c.vaciar();
+			add(c);
+		}
+	}
+	
+}
+public int niñosMalos(){
+	int suma = 0;
+	for(Carta c: cartas){
+		if(c.vacia()){
+			suma++;
+		}
+	}
+	return suma;
+}
+}

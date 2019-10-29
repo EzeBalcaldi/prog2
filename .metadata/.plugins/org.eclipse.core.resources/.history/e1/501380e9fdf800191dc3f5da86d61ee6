@@ -1,0 +1,13 @@
+package tp5ej2;
+
+import java.util.ArrayList;
+
+public class Establecimiento extends SistemaElectoral{
+protected ArrayList<SistemaElectoral> establecimientos;
+protected String nombre;
+public Establecimiento(String nombre) {
+	this.nombre = nombre;
+	establecimientos = new ArrayList<SistemaElectoral>();
+}
+
+}

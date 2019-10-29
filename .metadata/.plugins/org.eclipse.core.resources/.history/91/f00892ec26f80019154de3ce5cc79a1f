@@ -1,0 +1,5 @@
+
+public abstract class ElementoGeografico  {
+protected String nombre;
+public abstract int cantidadHabitantes();
+}

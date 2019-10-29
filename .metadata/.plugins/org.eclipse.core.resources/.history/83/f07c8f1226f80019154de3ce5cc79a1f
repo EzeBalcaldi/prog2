@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+
+
+public class Continente extends ElementoGeografico{
+protected ArrayList<ElementoGeografico> ciudades;
+public Continente(String n){
+	nombre = n;
+	ciudades = new ArrayList<ElementoGeografico>();
+}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;tp4ej3.Evaluador.conocimientos&apos; in &apos;tp4ej3.Evaluador&apos;&#x0D;&#x0A;- Original project: &apos;tp4ej3&apos;&#x0D;&#x0A;- Original element: &apos;tp4ej3.Evaluador.conocimientos&apos;&#x0D;&#x0A;- Getter method name: &apos;getConocimientos&apos;&#x0D;&#x0A;- Setter method name: &apos;setConocimientos&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;conocimientos&apos;" flags="589830" getter="getConocimientos" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;tp4ej3{Evaluador.java[Evaluador^conocimientos" insertion="0" setter="setConocimientos" stamp="1569267329084" version="1.0" visibility="1"/>
+</session>
