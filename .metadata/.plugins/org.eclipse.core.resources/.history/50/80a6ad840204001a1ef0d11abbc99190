@@ -1,0 +1,13 @@
+package recuperatorio2018;
+
+public class CondicionDNI extends Condicion{
+	private int dni;
+	
+	public CondicionDNI(int dni) {
+		this.dni = dni;
+	}
+	public boolean seCumple(SeguroSimple s) {
+		return dni == s.datos.get(dni);
+	}
+
+}

@@ -1,0 +1,9 @@
+package recuperatorio2018;
+
+import java.util.ArrayList;
+
+public abstract class SistemaSeguros {
+	protected int precio;
+	public abstract ArrayList getSeguros(Condicion c);
+
+}

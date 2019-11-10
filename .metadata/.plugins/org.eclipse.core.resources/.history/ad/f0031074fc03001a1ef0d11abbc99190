@@ -1,0 +1,25 @@
+package recuperatorio2018;
+
+import java.util.ArrayList;
+
+public class SeguroCompuesto extends SistemaSeguros{
+protected ArrayList<SeguroSimple> seguros;
+protected int descuento;
+public SeguroCompuesto(int p, int d) {
+	this.precio = p;
+	this.descuento = d;
+	this.seguros = new ArrayList<SeguroSimple>();
+}
+public void add(SeguroSimple s){
+	seguros.add(s);
+}
+public ArrayList<SistemaSeguros> getSeguros(Condicion c) {
+	ArrayList<SeguroSimple> aux = new ArrayList<SeguroSimple>;
+	for(SeguroSimple s: seguros){
+		if(c.seCumple(s)){
+			aux.add()
+		}
+	}
+	
+}
+}

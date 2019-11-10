@@ -1,0 +1,22 @@
+package recuperatorio2018;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class SeguroSimple extends SistemaSeguros{
+protected HashMap<String, String> datos;
+public SeguroSimple(int p){
+	this.precio = p;
+	this.datos = new HashMap<String,String>();
+}
+public void add(String key, String value){
+	datos.put(key, value);
+}
+public ArrayList<SeguroSimple> getSeguros(Condicion c) {
+	ArrayList<SeguroSimple> aux = new ArrayList<SeguroSimple>();
+	if(c.seCumple(this)){
+		aux.add(this);
+	}
+	return aux;
+}
+}

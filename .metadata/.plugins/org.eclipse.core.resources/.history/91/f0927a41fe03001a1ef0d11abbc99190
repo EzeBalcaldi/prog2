@@ -1,0 +1,29 @@
+package recuperatorio2018;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+
+public class SeguroEspecial extends SistemaSeguros {
+	protected LocalDate inicio;
+	protected LocalDate fin;
+	public SeguroEspecial(double p, LocalDate inicio, LocalDate fin) {
+		this.precio = p;
+		this.inicio = inicio;
+		this.fin = fin;
+		//inicio.isBefore(other)
+	}
+	@Override
+	public ArrayList<SistemaSeguros> getSeguros(Condicion c) {
+		ArrayList<SistemaSeguros> aux = new ArrayList<SistemaSeguros>();
+		if(c.seCumple(this)){
+			aux.add(this);
+		}
+		return aux;
+	}
+	@Override
+	public double getPrecio() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}

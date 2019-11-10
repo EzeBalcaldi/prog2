@@ -1,0 +1,7 @@
+package recuperatorio2018;
+
+public abstract class SistemaSeguros {
+	protected int precio;
+	public ArrayList<Seguro> getSeguros(Condicion c);
+
+}

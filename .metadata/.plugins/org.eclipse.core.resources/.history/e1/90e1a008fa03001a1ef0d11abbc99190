@@ -1,0 +1,13 @@
+package recuperatorio2018;
+
+import java.util.HashMap;
+
+public class SeguroSimple extends SistemaSeguros{
+protected HashMap<String, String> seguros;
+public SeguroSimple(){
+	this.seguros = new HashMap<String,String>();
+}
+public void add(String key, String value){
+	seguros.put(key, value);
+}
+}
