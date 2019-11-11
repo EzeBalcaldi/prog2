@@ -1,0 +1,41 @@
+import java.util.ArrayList;
+
+
+public class Jefe extends Empresa {
+protected int antiguedad;
+protected ArrayList<Empresa> empleados;
+
+public Jefe(String n, String a, int e, double s, int antiguedad) {
+	nombre = n;
+	apellido = a;
+	edad = e;
+	sueldo = s;
+	this.antiguedad = antiguedad;
+	empleados = new ArrayList<Empresa>();
+}
+
+public ArrayList<String> getEspecialidad() {
+	 ArrayList<String> aux = new ArrayList<String>();
+	for(Empresa e: empleados){
+		aux.addAll(e.getEspecialidad());
+	}
+	return aux;
+}
+
+public double getSueldo() {
+	double suma = 0;
+	for(Empresa e: empleados){
+		suma += e.getSueldo();
+	}
+	return suma + sueldo;
+}
+public ArrayList<Empleado> getEmpleados(Condicion c){
+	ArrayList<Empleado> aux = new ArrayList<Empleado>();
+	for(Empresa e: empleados){
+		aux.addAll(e.getEmpleados(c));
+	}
+	return aux;
+}
+
+
+}

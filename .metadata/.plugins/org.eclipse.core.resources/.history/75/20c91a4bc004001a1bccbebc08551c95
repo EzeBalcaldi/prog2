@@ -1,0 +1,14 @@
+
+public class ComparadorApellido extends CompadorEmpresa{
+
+	public ComparadorApellido(CompadorEmpresa s) {
+		super(s);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public int comparar(Empresa e, Empresa e1) {
+		return e.nombre.compareTo(e1.nombre);
+	}
+
+}

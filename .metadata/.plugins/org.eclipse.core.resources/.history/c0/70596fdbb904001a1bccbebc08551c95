@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+
+
+public class Empleado extends Empresa{
+	protected  int horasTrabajo;
+	public Empleado(String n, String a, int e, double s, int horasTrabajo) {
+		nombre = n;
+		apellido = a;
+		edad = e;
+		sueldo = s;
+		this.horasTrabajo = horasTrabajo;
+		this.especialidades = new ArrayList<String>();
+
+	}
+}

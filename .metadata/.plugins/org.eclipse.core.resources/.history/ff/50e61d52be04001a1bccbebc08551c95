@@ -1,0 +1,8 @@
+
+public abstract class CompadorEmpresa implements Comparable<Empresa> {
+
+	public int compareTo(Empresa arg0) {
+		return 0;
+	}
+
+}

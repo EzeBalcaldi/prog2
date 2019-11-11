@@ -1,0 +1,8 @@
+
+public class ComparadorHorasTrabajadas extends CompadorProgramadores {
+
+	public int compare(Empleado e, Empleado e1) {
+		e.horasTrabajo = new Integer();
+		return e.horasTrabajo.compareTo(e1.horasTrabajo);
+	}
+}

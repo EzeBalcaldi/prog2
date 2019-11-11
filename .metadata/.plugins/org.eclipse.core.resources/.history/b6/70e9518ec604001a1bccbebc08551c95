@@ -1,0 +1,9 @@
+
+public class CondicionNombre extends Condicion{
+
+	public boolean seCumple(Empleado e) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

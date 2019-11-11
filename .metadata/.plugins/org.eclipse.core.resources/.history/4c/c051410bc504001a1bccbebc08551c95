@@ -1,0 +1,7 @@
+
+public class ComparadorHorasTrabajadas extends CompadorProgramadores {
+
+	public int compare(Empleado e, Empleado e1) {
+		return 0;
+	}
+}

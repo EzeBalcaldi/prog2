@@ -1,0 +1,13 @@
+
+public class CondicionNombre extends Condicion{
+	private String nombre;
+	public CondicionNombre(String n){
+		nombre = n;
+	}
+
+	public boolean seCumple(Empleado e) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

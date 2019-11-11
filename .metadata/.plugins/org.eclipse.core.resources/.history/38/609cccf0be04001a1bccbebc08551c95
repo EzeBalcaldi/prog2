@@ -1,0 +1,12 @@
+import java.util.Comparator;
+
+
+public abstract class CompadorEmpresa implements Comparator<Empresa> {
+	protected CompadorEmpresa c;
+	protected CompadorEmpresa siguiente;
+	public  abstract int compareTo(Empresa e);
+	public boolean compare(Empresa e, Empresa e1){
+		return true;
+	}
+
+}

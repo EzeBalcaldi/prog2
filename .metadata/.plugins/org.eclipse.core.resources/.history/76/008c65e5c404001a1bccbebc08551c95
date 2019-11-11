@@ -1,0 +1,7 @@
+import java.util.Comparator;
+
+
+public abstract class CompadorProgramadores implements Comparator<Empleado>{
+	public  abstract int comparar(Empleado e, Empleado e1);
+
+}

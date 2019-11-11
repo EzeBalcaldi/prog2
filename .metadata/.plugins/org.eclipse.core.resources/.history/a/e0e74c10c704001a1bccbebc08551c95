@@ -1,0 +1,10 @@
+
+public class CondicionAnd {
+private Condicion c1;
+private Condicion c2;
+
+public CondicionAnd(Condicion c, Condicion c1){
+	this.c1 = c;
+	this.c2 = c1;
+}
+}

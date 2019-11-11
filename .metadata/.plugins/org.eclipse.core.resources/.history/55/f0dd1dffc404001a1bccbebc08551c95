@@ -1,0 +1,14 @@
+
+public class ComparadorHorasTrabajadas extends CompadorProgramadores {
+
+	public ComparadorHorasTrabajadas(CompadorEmpresa s) {
+		super(s);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public int comparar(Empresa e, Empresa e1) {
+		return 
+	}
+
+}

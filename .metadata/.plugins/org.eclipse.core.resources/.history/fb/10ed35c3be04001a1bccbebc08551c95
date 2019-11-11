@@ -1,0 +1,10 @@
+import java.util.Comparator;
+
+
+public abstract class CompadorEmpresa implements Comparator<Empresa> {
+
+	public int compareTo(Empresa arg0) {
+		return 0;
+	}
+
+}

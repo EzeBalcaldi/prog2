@@ -19,7 +19,6 @@ public ArrayList<SistemaSeguros> getSeguros(Condicion c) {
 	}
 	return aux;
 }
-@Override
 public double getPrecio() {
 	return precio;
 }
