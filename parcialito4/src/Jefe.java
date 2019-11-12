@@ -6,16 +6,14 @@ public class Jefe extends Empresa {
 protected int antiguedad;
 protected ArrayList<Empresa> empleados;
 protected CompadorEmpresa comp;
-protected CompadorProgramadores comp1;
 
-public Jefe(String n, String a, int e, double s, int antiguedad, CompadorEmpresa cc, CompadorProgramadores c2) {
+public Jefe(String n, String a, int e, double s, int antiguedad, CompadorEmpresa cc) {
 	nombre = n;
 	apellido = a;
 	edad = e;
 	sueldo = s;
 	this.antiguedad = antiguedad;
 	comp = cc;
-	comp1 = c2;
 	empleados = new ArrayList<Empresa>();
 }
 

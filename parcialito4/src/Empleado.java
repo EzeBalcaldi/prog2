@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 
-public class Empleado extends Empresa{
+public class Empleado extends Empresa implements Comparable<Empleado>{
 	protected  int horasTrabajo;
 	protected ArrayList<String> especialidades;
 
@@ -40,5 +40,13 @@ public class Empleado extends Empresa{
 		return this;
 		}
 		return null;
+	}
+
+	@Override
+	public int compareTo(Empleado otro) {
+		Integer otroHoras = otro.horasTrabajo;
+		Integer horas = this.horasTrabajo;
+		
+		return Integer.compare(horas, otroHoras);
 	}
 }
